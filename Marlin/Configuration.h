@@ -1392,7 +1392,7 @@
  *     O-- FRONT --+
  */
 // Edited for Deses-Ender3
-#define NOZZLE_TO_PROBE_OFFSET { -54.5, -22, 0 }
+#define NOZZLE_TO_PROBE_OFFSET { -54.5, -22, -1.5 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
@@ -1475,7 +1475,7 @@
  */
 // Edited for Deses-Ender3
 #define Z_CLEARANCE_DEPLOY_PROBE    5 // Z Clearance for Deploy/Stow
-#define Z_CLEARANCE_BETWEEN_PROBES  3 // Z Clearance between probe points
+#define Z_CLEARANCE_BETWEEN_PROBES  5 // Z Clearance between probe points
 #define Z_CLEARANCE_MULTI_PROBE     3 // Z Clearance between multiple probes
 #define Z_AFTER_PROBING             5 // Z position after probing is done
 
@@ -1856,7 +1856,7 @@
     // Experimental Subdivision of the grid by Catmull-Rom method.
     // Synthesizes intermediate points to produce a more detailed mesh.
     // Edited for Deses-Ender3
-    #define ABL_BILINEAR_SUBDIVISION
+    //#define ABL_BILINEAR_SUBDIVISION
     #if ENABLED(ABL_BILINEAR_SUBDIVISION)
       // Number of subdivisions between probe points
       #define BILINEAR_SUBDIVISIONS 3
