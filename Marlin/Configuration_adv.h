@@ -2063,8 +2063,8 @@
 #if PROBE_SELECTED && !IS_KINEMATIC
   #define PROBING_MARGIN_LEFT  54.5
   #define PROBING_MARGIN_RIGHT    0
-  #define PROBING_MARGIN_FRONT   22
-  #define PROBING_MARGIN_BACK     0
+  #define PROBING_MARGIN_FRONT 54.5
+  #define PROBING_MARGIN_BACK  54.5
 #endif
 
 #if EITHER(MESH_BED_LEVELING, AUTO_BED_LEVELING_UBL)
@@ -2530,8 +2530,8 @@
 // Edited for Deses-Ender3
 #define ADVANCED_PAUSE_FEATURE
 #if ENABLED(ADVANCED_PAUSE_FEATURE)
-  #define PAUSE_PARK_RETRACT_FEEDRATE         30  // (mm/s) Initial retract feedrate.
-  #define PAUSE_PARK_RETRACT_LENGTH            3  // (mm) Initial retract.
+  #define PAUSE_PARK_RETRACT_FEEDRATE         40  // (mm/s) Initial retract feedrate.
+  #define PAUSE_PARK_RETRACT_LENGTH            4  // (mm) Initial retract.
                                                   // This short retract is done immediately, before parking the nozzle.
   #define FILAMENT_CHANGE_UNLOAD_FEEDRATE     10  // (mm/s) Unload filament feedrate. This can be pretty fast.
   #define FILAMENT_CHANGE_UNLOAD_ACCEL        25  // (mm/s^2) Lower acceleration may allow a faster feedrate.
@@ -3755,7 +3755,6 @@
  * Auto-report fan speed with M123 S<seconds>
  * Requires fans with tachometer pins
  */
-// Edited for Deses-Ender3
 //#define AUTO_REPORT_FANS
 
 /**
@@ -3771,7 +3770,7 @@
  * Auto-report position with M154 S<seconds>
  */
 // Edited for Deses-Ender3
-//#define AUTO_REPORT_POSITION
+#define AUTO_REPORT_POSITION
 
 /**
  * Include capabilities in M115 output
@@ -3831,7 +3830,7 @@
 //#define M114_LEGACY         // M114 used to synchronize on every call. Enable if needed.
 
 // Edited for Deses-Ender3
-//#define REPORT_FAN_CHANGE   // Report the new fan speed when changed by M106 (and others)
+#define REPORT_FAN_CHANGE   // Report the new fan speed when changed by M106 (and others)
 
 /**
  * Spend 28 bytes of SRAM to optimize the G-code parser
