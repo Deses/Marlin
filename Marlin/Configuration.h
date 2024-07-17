@@ -629,9 +629,9 @@
     #define DEFAULT_Ki_LIST {   1.08,   1.08 }
     #define DEFAULT_Kd_LIST { 114.00, 114.00 }
   #else
-    #define DEFAULT_Kp  24.43
-    #define DEFAULT_Ki   3.05
-    #define DEFAULT_Kd  48.87
+    #define DEFAULT_Kp 22.74
+    #define DEFAULT_Ki 2.76
+    #define DEFAULT_Kd 46.84
   #endif
 #endif
 
@@ -1094,7 +1094,7 @@
  *                                      X, Y, Z [, I [, J [, K]]], E0 [, E1[, E2...]]
  */
 // Edited for Deses-Ender3
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 396.7 } // Dragonfly BMS + BMG Clone
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 410.22 } // Dragonfly BMS + BMG Clone
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -1392,7 +1392,7 @@
  *     O-- FRONT --+
  */
 // Edited for Deses-Ender3
-#define NOZZLE_TO_PROBE_OFFSET { -54.5, -22, -1.14 }
+#define NOZZLE_TO_PROBE_OFFSET { -54.5, -22, 0 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
