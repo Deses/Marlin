@@ -1391,7 +1391,7 @@
  *     O-- FRONT --+
  */
 // Edited for Deses-Ender3
-#define NOZZLE_TO_PROBE_OFFSET { -54.5, -22, 0 }
+#define NOZZLE_TO_PROBE_OFFSET { -22, -16.25, 0 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
@@ -1838,7 +1838,7 @@
 
   // Set the number of grid points per dimension.
   // Edited for Deses-Ender3
-  #define GRID_MAX_POINTS_X 5
+  #define GRID_MAX_POINTS_X 6
   #define GRID_MAX_POINTS_Y GRID_MAX_POINTS_X
 
   // Probe along the Y axis, advancing X after each column
